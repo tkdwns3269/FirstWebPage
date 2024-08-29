@@ -2912,29 +2912,7 @@
 		}
 
 		body:after {
-			-moz-pointer-events: none;
-			-webkit-pointer-events: none;
-			-ms-pointer-events: none;
-			pointer-events: none;
-			-moz-transition: opacity 1.5s ease-in-out, visibility 1.5s;
-			-webkit-transition: opacity 1.5s ease-in-out, visibility 1.5s;
-			-ms-transition: opacity 1.5s ease-in-out, visibility 1.5s;
-			transition: opacity 1.5s ease-in-out, visibility 1.5s;
-			content: '';
-			background-image: url(../../images/bg.jpg);
-			background-attachment: fixed;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-			position: fixed;
-			display: block;
-			top: 0;
-			left: 0;
-			height: 100%;
-			width: 100%;
-			z-index: -1;
-			visibility: visible;
-			opacity: 1;
+
 		}
 
 			@media screen and (max-width: 980px) {
@@ -3163,7 +3141,7 @@
 
 		.copyright {
 			color: #bbb;
-			font-size: 0.9rem;
+			font-size: 1.5rem;
 			margin: 0 0 2rem 0;
 			padding: 0 1rem;
 			text-align: center;
