@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
 
 /*
-	Caminar by TEMPLATED
+	NINTENDO by TEMPLATED
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
@@ -2901,19 +2901,45 @@
 
 /* Header */
 
-	body {
-		background-color: #1e1f23;
-		padding-top: 8rem;
+body {
+	background-image: url(https://www.nintendo.co.kr/switch/aqmxa/assets/img/common/bg_item_blue.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 8rem;
+}
+
+	body.is-loading:after {
+		visibility: hidden;
+		opacity: 0;
 	}
 
-		body.is-loading:after {
-			visibility: hidden;
-			opacity: 0;
-		}
-
-		body:after {
-
-		}
+	body:after {
+		-moz-pointer-events: none;
+		-webkit-pointer-events: none;
+		-ms-pointer-events: none;
+		pointer-events: none;
+		-moz-transition: opacity 1.5s ease-in-out, visibility 1.5s;
+		-webkit-transition: opacity 1.5s ease-in-out, visibility 1.5s;
+		-ms-transition: opacity 1.5s ease-in-out, visibility 1.5s;
+		transition: opacity 1.5s ease-in-out, visibility 1.5s;
+		content: '';
+		background-image: url(https://www.nintendo.co.kr/switch/aqmxa/assets/img/common/bg_item_blue.png);
+		background-attachment: scroll;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: fixed;
+		display: block;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+		visibility: visible;
+		opacity: 1;
+	}
 
 			@media screen and (max-width: 980px) {
 
